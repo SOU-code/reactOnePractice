@@ -1,0 +1,110 @@
+@import "colors.scss";
+.home {
+  background-color: $fourth;
+  width: 100%;
+  height: 100vh;
+  > main {
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    justify-content: center;
+    h1 {
+      font: 400 6rem $text1;
+      color: $first;
+    }
+    p {
+      font: 900 1rem $text1;
+      color: $first;
+    }
+  }
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat center/auto url("../assets/1.png");
+    filter: blur(2px);
+    border-radius: 0 0 200px 200px;
+  }
+}
+.home2 {
+  display: flex;
+  padding: 3rem;
+  background-color: $fourth;
+  color: $first;
+  align-items: center;
+  justify-content: center;
+  > img {
+    width: 40%;
+    animation: imgUp 0.5s linear infinite alternate;
+  }
+  > p {
+    width: 50%;
+    padding: 5rem;
+    font: 100 1.2rem $text2;
+    letter-spacing: 2px;
+  }
+}
+@keyframes imgUp {
+    to{
+        transform: translateY(-10%);
+    } 
+  }
+.home3 {
+  background-color: $second;
+  margin-top: -2rem;
+  > div {
+    background-color: $first;
+    width: 70%;
+    padding: 5rem;
+    border-radius: 0 5rem 5rem 0;
+    > h1 {
+      font: 600 3rem roboto;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid $second;
+      text-align: center;
+    }
+    > p {
+      font: 1.2rem $text2;
+      margin-top: 3rem;
+      letter-spacing: 2px;
+    }
+  }
+}
+.home4 {
+    background-color: $second;
+    display: flex;
+    justify-content: flex-end;
+    > div {
+      background-color: $fourth;
+      width: 70%;
+      padding: 5rem;
+      border-radius: 5rem 0 0 5rem;
+      color: $first;
+      > h1 {
+        font: 600 3rem roboto;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $first;
+        text-align: center;
+      }
+      > article{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+        >div{
+            text-align: center;
+            font-size: 5rem;
+            animation: imgUp 0.5s linear infinite alternate;
+            >p{
+                font: 100 1.6rem $text2;
+            }
+        }
+      }
+    }
+  }
+  
